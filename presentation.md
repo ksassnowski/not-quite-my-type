@@ -539,7 +539,21 @@ $repository->find($user->device_id);
 ---
 
 # Using **Attribute Casts**
-#### link to docs here
+#### https://laravel.com/docs/9.x/eloquent-mutators#custom-casts
+
+---
+
+[.code-highlight: all]
+[.code-highlight: 3-5]
+
+```php
+final class MyModel extends Model
+{
+    protected $casts = [
+        'device_id' => 'encrypted'
+    ];
+}
+```
 
 ---
 
@@ -593,7 +607,7 @@ final class User extends Model
 
 ---
 
-Using this cast, `device_id` can now only be set to `null`, or a `UuidInterface`.
+`device_id` can now **only** be set to `null`, or a `UuidInterface`.
 
 ```php
 // works, null is allowed
@@ -621,7 +635,7 @@ $user->device_id = 'not a uuid, lol';
 
 ---
 
-`device_id` is **guaranteed** to be either `null` or a valid `UuidInterface`
+`$deviceID` is **guaranteed** to be either `null` or a valid `UuidInterface`
 
 ```php
 $deviceID = $user->device_id;
@@ -629,7 +643,7 @@ $deviceID = $user->device_id;
 
 ---
 
-`device_id` is **guaranteed** to be either `null` or a valid `UuidInterface`
+`$deviceID` is **guaranteed** to be either `null` or a valid `UuidInterface`
 
 ```php
 $deviceID = $user->device_id;
