@@ -584,8 +584,8 @@ final class MyModel extends Model
 [.code-highlight: 3-6]
 [.code-highlight: 5]
 [.code-highlight: 8-17]
-[.code-highlight: 10-13]
-[.code-highlight: 15]
+[.code-highlight: 10-14]
+[.code-highlight: 16]
 
 ```php
 final class UUIDCast implements CastsAttributes
@@ -603,7 +603,7 @@ final class UUIDCast implements CastsAttributes
             );
         }
 
-        return [$key => $value->toString()];
+        return [$key => $value?->toString()];
     }
 }
 ```
