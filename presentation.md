@@ -30,11 +30,12 @@ N/A
 
 ---
 
-# Scenario 1: **Device IDs**
+### Scenario the first
+#  **Device IDs**
 
 ---
 
-## Scenario 1: Device IDs
+## Some **Context**
 
 ^Here’s what we know about device ids
 
@@ -824,7 +825,8 @@ $deviceRepository->find($user->device_id);
 
 ---
 
-# Scenario 2: **Price Discount**
+### Scenario the second
+# **Price Discount**
 
 ---
 
