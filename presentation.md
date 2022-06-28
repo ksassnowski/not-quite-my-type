@@ -8,6 +8,28 @@ footer: Not Quite My Type: Using types to make impossible states truly impossibl
 
 ---
 
+[.column]
+
+# Hi, I’m **Kai** :wave:
+
+![inline 80%](mugshot.png)
+
+[.column]
+
+**Website**
+kai-sassnowski.com
+
+**GitHub**
+github.com/ksassnowski
+
+**Twitter**
+@warsh33p
+
+**Soundcloud**
+N/A
+
+---
+
 # Scenario 1: **Device IDs**
 
 ---
@@ -1071,10 +1093,32 @@ $cart->total();
 
 ---
 
+# Conclusion
+
 - If an **int** can't be negative, it’s not an **int** because an **int** can be negative
 - If a **string** can't be empty, it’s not a **string** because a **string** can be empty
 - If a **string** has to have a specific length, it’s not a **string** because a **string** can have any length
 
 ---
 
+> If it walks like a **duck** and quacks like a **duck**…
+
+---
+
+> If it walks like a **duck** and quacks like a **duck** but has four legs, fur instead of feathers, and can’t fly…
+
+---
+
+[.hide-footer]
+
+# It’s probably **not a duck**
+
+![inline](dogduck.jpg)
+
+---
+
 > If a parameter has to satisfy certain invariants, consider promoting it to an object that **guarantees these invariants**
+
+---
+
+# Thanks for **listening**!
